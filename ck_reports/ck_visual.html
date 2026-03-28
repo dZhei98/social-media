@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>CK-like Visual</title>
+  <style>
+    body { font-family: Helvetica, Arial, sans-serif; margin: 24px; color: #1f2937; }
+    h1 { margin-bottom: 6px; }
+    .meta { color: #6b7280; margin-bottom: 18px; }
+    .cards { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+    .card { border: 1px solid #d1d5db; border-radius: 8px; padding: 10px 14px; min-width: 170px; }
+    .label { color: #6b7280; font-size: 12px; text-transform: uppercase; }
+    .value { font-size: 20px; font-weight: 700; margin-top: 3px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border-bottom: 1px solid #e5e7eb; text-align: left; padding: 8px; font-size: 14px; }
+    .bar { width: 100%; background: #fef3c7; border-radius: 999px; height: 10px; }
+    .bar span { display: block; height: 10px; background: #d97706; border-radius: 999px; }
+  </style>
+</head>
+<body>
+  <h1>CK-like Metrics Visual</h1>
+  <div class='meta'>Generated 2026-03-28 16:19:32 · Mode: module</div>
+  <div class='cards'>
+    <div class='card'><div class='label'>Entities</div><div class='value'>43</div></div>
+    <div class='card'><div class='label'>Average Risk</div><div class='value'>3.92</div></div>
+    <div class='card'><div class='label'>Avg WMC</div><div class='value'>7.02</div></div>
+    <div class='card'><div class='label'>Avg DIT</div><div class='value'>0.00</div></div>
+    <div class='card'><div class='label'>Avg NOC</div><div class='value'>0.00</div></div>
+    <div class='card'><div class='label'>Avg CBO</div><div class='value'>1.12</div></div>
+    <div class='card'><div class='label'>Avg RFC</div><div class='value'>4.14</div></div>
+    <div class='card'><div class='label'>Avg LCOM</div><div class='value'>0.00</div></div>
+    <div class='card'><div class='label'>Max WMC</div><div class='value'>28.00</div></div>
+    <div class='card'><div class='label'>Max CBO</div><div class='value'>6.00</div></div>
+  </div>
+    <h2>Top Risk Entities</h2>
+  <div style='overflow-x:auto'>
+  <table>
+        <thead><tr><th>Entity</th><th>WMC</th><th>DIT</th><th>NOC</th><th>CBO</th><th>Ca</th><th>Ce</th><th>RFC</th><th>LCOM</th><th>Risk</th><th>Relative</th></tr></thead>
+    <tbody>
+      <tr><td>user.controller.js</td><td>28.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>14.00</td><td>0.00</td><td>14.25</td><td><div class='bar'><span style='width:100.00%'></span></div></td></tr><tr><td>post.controller.js</td><td>25.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>12.00</td><td>0.00</td><td>12.65</td><td><div class='bar'><span style='width:88.77%'></span></div></td></tr><tr><td>Profile.js</td><td>18.00</td><td>0.00</td><td>0.00</td><td>5.00</td><td>0.00</td><td>5.00</td><td>12.00</td><td>0.00</td><td>10.85</td><td><div class='bar'><span style='width:76.14%'></span></div></td></tr><tr><td>EditProfile.js</td><td>15.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>9.00</td><td>0.00</td><td>8.05</td><td><div class='bar'><span style='width:56.49%'></span></div></td></tr><tr><td>api-user.js</td><td>16.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>8.00</td><td>0.00</td><td>8.00</td><td><div class='bar'><span style='width:56.14%'></span></div></td></tr><tr><td>api-post.js</td><td>16.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>8.00</td><td>0.00</td><td>8.00</td><td><div class='bar'><span style='width:56.14%'></span></div></td></tr><tr><td>Comments.js</td><td>14.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>10.00</td><td>0.00</td><td>7.85</td><td><div class='bar'><span style='width:55.09%'></span></div></td></tr><tr><td>Post.js</td><td>13.00</td><td>0.00</td><td>0.00</td><td>2.00</td><td>0.00</td><td>2.00</td><td>8.00</td><td>0.00</td><td>7.30</td><td><div class='bar'><span style='width:51.23%'></span></div></td></tr><tr><td>FindPeople.js</td><td>12.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>10.00</td><td>0.00</td><td>7.05</td><td><div class='bar'><span style='width:49.47%'></span></div></td></tr><tr><td>NewPost.js</td><td>12.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>7.00</td><td>0.00</td><td>6.45</td><td><div class='bar'><span style='width:45.26%'></span></div></td></tr><tr><td>user.model.js</td><td>11.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>6.00</td><td>0.00</td><td>5.60</td><td><div class='bar'><span style='width:39.30%'></span></div></td></tr><tr><td>Newsfeed.js</td><td>8.00</td><td>0.00</td><td>0.00</td><td>3.00</td><td>0.00</td><td>3.00</td><td>7.00</td><td>0.00</td><td>5.35</td><td><div class='bar'><span style='width:37.54%'></span></div></td></tr><tr><td>Signin.js</td><td>9.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>7.00</td><td>0.00</td><td>5.25</td><td><div class='bar'><span style='width:36.84%'></span></div></td></tr><tr><td>DeleteUser.js</td><td>9.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>6.00</td><td>0.00</td><td>5.05</td><td><div class='bar'><span style='width:35.44%'></span></div></td></tr><tr><td>dbErrorHandler.js</td><td>9.00</td><td>0.00</td><td>0.00</td><td>2.00</td><td>2.00</td><td>0.00</td><td>2.00</td><td>0.00</td><td>4.50</td><td><div class='bar'><span style='width:31.58%'></span></div></td></tr><tr><td>auth-helper.js</td><td>8.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>4.00</td><td>0.00</td><td>4.25</td><td><div class='bar'><span style='width:29.82%'></span></div></td></tr><tr><td>Users.js</td><td>7.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>6.00</td><td>0.00</td><td>4.25</td><td><div class='bar'><span style='width:29.82%'></span></div></td></tr><tr><td>Signup.js</td><td>7.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>6.00</td><td>0.00</td><td>4.25</td><td><div class='bar'><span style='width:29.82%'></span></div></td></tr><tr><td>auth.controller.js</td><td>7.00</td><td>0.00</td><td>0.00</td><td>1.00</td><td>0.00</td><td>1.00</td><td>3.00</td><td>0.00</td><td>3.65</td><td><div class='bar'><span style='width:25.61%'></span></div></td></tr><tr><td>Home.js</td><td>5.00</td><td>0.00</td><td>0.00</td><td>2.00</td><td>0.00</td><td>2.00</td><td>5.00</td><td>0.00</td><td>3.50</td><td><div class='bar'><span style='width:24.56%'></span></div></td></tr>
+    </tbody>
+  </table>
+  </div>
+</body>
+</html>

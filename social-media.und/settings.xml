@@ -7,7 +7,6 @@
     <dir
       name=".">
       <watched
-        additional="readme.*,license.*,copyright.*"
         excludes=".*"
         subdirs="true">
         <filter
@@ -39,7 +38,8 @@
       <dir
         name="dist"/>
       <dir
-        name="node_modules">
+        name="node_modules"
+        excluded="true">
         <dir
           name="@babel">
           <dir
